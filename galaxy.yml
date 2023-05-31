@@ -1,13 +1,13 @@
 ---
-namespace: geerlingguy
-name: mac
-version: "1.2.0"
+namespace: ryan_bell_gea
+name: mac_onboarding
+version: "1.0.0"
 readme: README.md
 
 authors:
-  - geerlingguy
+  - ryan-bell-gea
 
-description: Collection of macOS automation tools for Ansible.
+description: Collection of macOS automation tools for Ansible. Adapted from geerlingguy.
 
 # Either a single license or a list of licenses for content inside of a collection. Ansible Galaxy currently only
 # accepts L(SPDX,https://spdx.org/licenses/) licenses. This key is mutually exclusive with 'license_file'
@@ -24,9 +24,6 @@ tags:
   - brew
   - workstation
   - dev
-  - mas
-  - appstore
-  - apps
   - configure
   - development
   - apple
@@ -35,13 +32,13 @@ tags:
   - imac
   - macmini
   - server
+  - infrastructure
+  - java
 
 dependencies:
   community.general: ">=3.0.0"
 
-repository: https://github.com/geerlingguy/ansible-collection-mac
-documentation: https://github.com/geerlingguy/ansible-collection-mac
-homepage: https://www.jeffgeerling.com
-issues: https://github.com/geerlingguy/ansible-collection-mac/issues
+repository: https://github.com/ryan-bell-gea/ansible-collection-mac
+documentation: https://github.com/ryan-bell-gea/ansible-collection-mac
 
 build_ignore: []

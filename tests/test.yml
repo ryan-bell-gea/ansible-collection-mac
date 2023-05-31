@@ -20,4 +20,4 @@
 
   roles:
     - elliotweiser.osx-command-line-tools
-    - geerlingguy.mac.homebrew
+    - rbell.mac.homebrew

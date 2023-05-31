@@ -8,7 +8,7 @@ name: CI
 
 defaults:
   run:
-    working-directory: ansible_collections/geerlingguy/mac
+    working-directory: ansible_collections/rbell/mac
 
 jobs:
   integration:
@@ -18,12 +18,13 @@ jobs:
       matrix:
         os:
           - macos-latest
+          - macos-12
 
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: ansible_collections/geerlingguy/mac
+          path: ansible_collections/rbell/mac
 
       - name: Uninstall GitHub Actions' built-in Homebrew.
         run: tests/uninstall-homebrew.sh

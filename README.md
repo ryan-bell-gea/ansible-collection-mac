@@ -1,16 +1,13 @@
 # Mac Collection for Ansible
 
 [![MIT licensed][badge-license]][link-license]
-[![Galaxy Collection][badge-collection]][link-galaxy]
 [![CI][badge-gh-actions]][link-gh-actions]
 
-This collection includes helpful Ansible roles and content to help with macOS automation. For a good example of the collection's usage, see the [Mac Dev Playbook](https://github.com/geerlingguy/mac-dev-playbook).
+This collection includes helpful Ansible roles and content to help with macOS automation. I adapted this from geerlingguy's collection for my own use. For a good example of the original collection's usage, see the [Mac Dev Playbook](https://github.com/geerlingguy/mac-dev-playbook).
 
 Roles included in this collection (click on the link to see the role's README and documentation):
 
-  - `geerlingguy.mac.homebrew` ([documentation](https://github.com/geerlingguy/ansible-collection-mac/blob/master/roles/homebrew/README.md))
-  - `geerlingguy.mac.mas` ([documentation](https://github.com/geerlingguy/ansible-collection-mac/blob/master/roles/mas/README.md))
-  - `geerlingguy.mac.dock` ([documentation](https://github.com/geerlingguy/ansible-collection-mac/blob/master/roles/dock/README.md))
+  - `ryan-bell-gea.mac.homebrew` ([documentation](https://github.com/ryan-bell-gea/ansible-collection-mac/blob/master/roles/homebrew/README.md))
 
 ## Installation
 
@@ -25,10 +22,10 @@ Or include this collection in your playbook's `requirements.yml` file:
 ```
 ---
 collections:
-  - name: geerlingguy.mac
+  - name: ryan-bell-gea.mac
 ```
 
-For a real-world example, see my [Mac Dev Playbook's requirements file](https://github.com/geerlingguy/mac-dev-playbook/blob/master/requirements.yml).
+For a real-world example, see geerlingguy's [Mac Dev Playbook's requirements file](https://github.com/geerlingguy/mac-dev-playbook/blob/master/requirements.yml).
 
 ### Role Requirements
 
@@ -53,10 +50,6 @@ Here's an example playbook which installs some Mac Apps (assuming you are signed
   gather_facts: false
 
   vars:
-    mas_installed_app_ids:
-      - 424389933 # Final Cut Pro
-      - 497799835 # Xcode
-
     homebrew_installed_packages:
       - node
       - nvm
@@ -72,10 +65,9 @@ Here's an example playbook which installs some Mac Apps (assuming you are signed
 
   roles:
     - geerlingguy.mac.homebrew
-    - geerlingguy.mac.mas
 ```
 
-For a real-world usage example, see my [Mac Dev Playbook](https://github.com/geerlingguy/mac-dev-playbook).
+For a real-world usage example, see geerlingguy's [Mac Dev Playbook](https://github.com/geerlingguy/mac-dev-playbook).
 
 See the full documentation for each role in the role's README, linked above.
 
@@ -85,12 +77,9 @@ MIT
 
 ## Author
 
-This collection was created by [Jeff Geerling](https://www.jeffgeerling.com), author of [Ansible for DevOps](https://www.ansiblefordevops.com).
+This collection was adapted by ryan-bell-gea. The original was created by [Jeff Geerling](https://www.jeffgeerling.com), author of [Ansible for DevOps](https://www.ansiblefordevops.com).
 
 [badge-gh-actions]: https://github.com/geerlingguy/ansible-collection-mac/workflows/CI/badge.svg?event=push
-[link-gh-actions]: https://github.com/geerlingguy/ansible-collection-mac/actions?query=workflow%3ACI
-[badge-collection]: https://img.shields.io/badge/collection-geerlingguy.mac-blue
-[link-galaxy]: https://galaxy.ansible.com/geerlingguy/mac
+[link-gh-actions]: https://github.com/ryan-bell-gea/ansible-collection-mac/actions?query=workflow%3ACI
 [badge-license]: https://img.shields.io/github/license/geerlingguy/ansible-collection-mac.svg
 [link-license]: https://github.com/geerlingguy/ansible-collection-mac/blob/master/LICENSE
-[badge-gh-actions]: https://github.com/geerlingguy/ansible-role-homebrew/workflows/CI/badge.svg?event=push
