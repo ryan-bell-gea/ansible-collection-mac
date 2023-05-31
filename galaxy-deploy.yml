@@ -50,3 +50,4 @@
     - name: Publish the collection.
       command: >
         ansible-galaxy collection publish ./{{ namespace }}-{{ collection }}-{{ release_tag }}.tar.gz
+        
