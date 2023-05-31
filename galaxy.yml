@@ -1,6 +1,6 @@
 ---
-namespace: ryan-bell-gea
-name: mac
+namespace: ryan_bell_gea
+name: mac_onboarding
 version: "1.0.0"
 readme: README.md
 
