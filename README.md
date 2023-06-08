@@ -14,7 +14,7 @@ Roles included in this collection (click on the link to see the role's README an
 Install via Ansible Galaxy:
 
 ```
-ansible-galaxy collection install geerlingguy.mac
+ansible-galaxy collection install ryan_bell_gea.mac_onboarding
 ```
 
 Or include this collection in your playbook's `requirements.yml` file:
@@ -22,7 +22,7 @@ Or include this collection in your playbook's `requirements.yml` file:
 ```
 ---
 collections:
-  - name: ryan-bell-gea.mac
+  - name: ryan_bell_gea.mac_onboarding
 ```
 
 For a real-world example, see geerlingguy's [Mac Dev Playbook's requirements file](https://github.com/geerlingguy/mac-dev-playbook/blob/master/requirements.yml).
@@ -37,7 +37,7 @@ roles:
   - name: elliotweiser.osx-command-line-tools
 
 collections:
-  - name: geerlingguy.mac
+  - name: ryan_bell_gea.mac_onboarding
 ```
 
 ## Usage
